@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InovaTech Finanças | Educação Financeira e Tecnologia</title>
     <meta name="description" content="Portal educativo sobre o futuro da economia digital, blockchain e segurança de dados.">
+    <!-- Tailwind CSS via CDN (kept for simplicity as per original request) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
@@ -35,12 +36,16 @@
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.1"
   }
 }
 </script>
 </head>
   <body class="bg-gray-50 text-slate-800 antialiased">
     <div id="root"></div>
+    <!-- Point to the entry file for Vite to bundle -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
